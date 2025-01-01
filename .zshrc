@@ -3,19 +3,16 @@ export LANG=ja_JP.UTF-8
 export HISTFILE=~/.config/zsh/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
-export LSCOLORS=cxfxcxdxbxegedabagacad
 
 setopt hist_ignore_dups
 setopt inc_append_history
 setopt share_history
 
-autoload -Uz colors
-
 #### alias ####
-alias ls='ls -GF'
-alias la='ls -aGF'
-alias ll='ls -lGF'
-alias lla='ls -alGF'
+alias ls='ls --color=auto'
+alias la='ls -a --color=auto'
+alias ll='ls -l --color=auto'
+alias lla='ls -al --color=auto'
 alias vim=nvim
 
 # git prompt options
